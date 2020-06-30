@@ -1,0 +1,36 @@
+#create and start
+docker run <container>
+
+docker create <container>
+
+docker start <containerID>
+
+
+#list all container running
+docker ps
+
+#list all containers runned
+docker ps --all
+
+
+docker logs <containerID>
+
+#erase all container download and list process etc
+docker system prune
+
+
+#stop container use SIGTERM signal
+docker stop <containerID>
+
+#kill container use SIGKILL signal
+docker kill <containerID>
+
+#run process into another
+#-i to attach the terminal to the process
+#-t for nice formatting
+
+docker exec -it <containerID> <command>
+
+
+#run shell inside container
+docker exect -it <containerID> sh | zsh | bash | powershell
